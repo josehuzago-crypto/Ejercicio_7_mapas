@@ -104,7 +104,7 @@ public class Ejercicio_7_Maps {
         }else {
             for (Map.Entry par : frecuencia.entrySet()) {
                 System.out.println("Palabra: " + par.getKey());
-                System.out.println("");
+                //System.out.println("");
             }
         }
         
