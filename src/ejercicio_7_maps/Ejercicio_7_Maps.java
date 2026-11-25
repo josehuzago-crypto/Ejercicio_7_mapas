@@ -36,7 +36,7 @@ public class Ejercicio_7_Maps {
         
         
        //Definimos texto a probar     
-       String textoPrueba = "java Es facIl, Java ES de tipaDO ; fuERte";
+       String textoPrueba = "java Es facIl, Java ES de tipaDO ; fuERte java con git";
        
        //Separamos palabras en un arreglo de String 
        String palabras[] = textoPrueba.split("[,;\\s]+");
