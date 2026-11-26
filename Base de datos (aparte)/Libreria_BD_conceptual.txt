@@ -2,47 +2,39 @@
 nombre String
 id int     ---PK
 nacionalidad String 
-|
-|
-|
-|
-|
-|
 
-Libro
 
-codigoUnico int  ---PK
+
+	Libro
+id_libro int  ---PK
 titulo String 
 autor String
-añoPublicado int
-canMaxExistencia int
-canLibrosPrestados int
-id_clienteLibroPrestado ---FK
+añoPublicado int             
+existencias int                                               
+id_editorial ---FK                          
 
 
-|
-|
-|
-|
-|
-|
-|
 
-Editorial
-nombreEditorial String 
-id_Editorial int ----PK
-id_libro int ----FK
-|
-|
-|
-|
-|
-|
-
-Biblioteca
-nombreBiblioteca String
-id_biblioteca -----PK
+	Editorial                                    
+nombre String                       
+id_Editorial int ----PK                      
+					     
+                                             
+	Biblioteca                                   
+nombre String                      
+id_biblioteca -----PK   
 ciudad String
 país String 
-id_Editorial int---FK
+
+
+	Biblioteca_Libro
+id_biblioteca ---FK
+id_libro ---FK
+
+	Prestamo 
+id_prestamo ---PK
+id_cliente --FK
+id_libro ---FK
+fecha_prestamo
+fecha_devolucion
 
