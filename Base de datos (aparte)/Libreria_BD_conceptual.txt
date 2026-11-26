@@ -1,0 +1,48 @@
+	Cliente 
+nombre String
+id int     ---PK
+nacionalidad String 
+|
+|
+|
+|
+|
+|
+
+Libro
+
+codigoUnico int  ---PK
+titulo String 
+autor String
+añoPublicado int
+canMaxExistencia int
+canLibrosPrestados int
+id_clienteLibroPrestado ---FK
+
+
+|
+|
+|
+|
+|
+|
+|
+
+Editorial
+nombreEditorial String 
+id_Editorial int ----PK
+id_libro int ----FK
+|
+|
+|
+|
+|
+|
+
+Biblioteca
+nombreBiblioteca String
+id_biblioteca -----PK
+ciudad String
+país String 
+id_Editorial int---FK
+
