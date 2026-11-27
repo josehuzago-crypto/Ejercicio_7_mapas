@@ -35,8 +35,10 @@ public class Ejercicio_7_Maps {
         Scanner input = new Scanner(System.in);
         
         
-       //Definimos texto a probar     
-       String textoPrueba = "java Es facIl, Java ES de tipaDO ; fuERte java con git";
+       //Definimos texto a probar
+        System.out.print("Ingrese un texto: ");
+        //String textoPrueba = "java Es facIl, Java ES de tipaDO ; fuERte java con git";
+       String textoPrueba = input.nextLine();
        
        //Separamos palabras en un arreglo de String 
        String palabras[] = textoPrueba.split("[,;\\s]+");
